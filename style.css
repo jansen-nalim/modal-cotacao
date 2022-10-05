@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+body {
+    background: #ffffff;
+    color: #555B73;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #1B2032;
+
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #555B73;
+
+    margin-bottom: 2rem;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 80px;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 18px;
+    margin-right: 75px;
+}
+
+.list-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+.ilustracao {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    margin-top: 100px;
+}
+
+.background-hero {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin-top: 100px;
+}
+
+.copy {
+    max-width: 590px;
+    padding: 100px 0;
+}
+
+
+.card {
+    background: #ffffff;
+    width: 300px;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bt-primario {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: #6E54E6;
+    border: none;
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.bt-secundario {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #636A80;
+    background: transparent;
+    border: 1.5px solid #636A80;
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+.bt-secundario a {
+    text-decoration: none;
+    color: #636A80;
+}
+
+/* Modal ---------------------------------------------------------------------------------------------- */
+
+
+.overlay-modal {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    z-index: 999;
+    
+    background: rgba(0, 0, 0, 0.411);
+}
+
+.overlay-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background: #fff;
+    width: 860px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.content-modal {
+    padding: 2rem;
+    color: rgb(36, 36, 36);
+    
+}
+
+.button-close {
+    position: fixed;
+    top: 50px;
+    right: 265px;
+    border: none;
+    border-radius: 2px;
+    background: transparent;
+  
+  }
+  
+  .button-close:hover {
+    background: rgba(99, 106, 128, 0.15);
+  }
